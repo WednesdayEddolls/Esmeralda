@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h2> {{page.title}} </h2>
+<div class="grid">
+    {% for photo in page.photo %}
+    <div class="col-4 background-image" style="background-image:url('{{photo.url}}')">
+    </div>
+    {% endfor %}
+  </div>
+</div>

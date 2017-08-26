@@ -1,0 +1,210 @@
+*{padding:0;
+margin:0;
+box-sizing: border-box;
+border: 1px solid rgb(240,240,240);}
+
+img{max-width: 100%;}
+
+header, footer {
+padding: 1% 5%;
+background-color: none;
+}
+
+section {
+   padding: 5%
+}
+
+h1,h2,h3,h4{
+  text-align: center;
+}
+h1 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 3rem
+}
+h1 span{font-size: 5rem;}
+p {
+  padding:7%;
+  padding-top: 15%;
+  font-family: 'Open Sans Condensed', sans-serif;
+font-size: 18px
+}
+
+a {text-decoration: none;color: inherit;}
+
+.heavy-padded{
+  padding:5%;
+}
+.horiz-padd {
+  padding: 1% 3%;
+}
+
+.light-padded {
+  padding: 2%;
+}
+
+.left {
+  text-align:left;
+}
+.right {
+  text-align: right;
+}
+
+.flex-center{
+  display:flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/*header*/
+
+
+/*<footer>*/
+
+footer{
+  text-align: center;
+
+}
+
+footer .fa{font-size: 3rem}
+
+/*index*/
+
+.index-circles{
+  background-color: pink;
+  background-size:cover;
+  background-position: center;
+  height:27.4vw;
+  border-radius:50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+.index-circles:hover{
+  transform: scale(1.2);
+filter: grayscale(1); 
+}
+
+.index-circles h2 {
+  color: white;
+  transition: all 1s;
+}
+.index-circles:hover h2 {
+  color: white;
+}
+
+
+
+
+/* Background images */
+
+.background-image {
+  background-size:cover;
+  background-position: center;
+  padding: 30% 1%;
+}
+
+.background-image h2 {
+  color: white;
+}
+/* Home page circles */
+.bg-travel {
+  background-image:url('/images/world-in-your-hands.jpg');
+}
+
+.bg-photography {
+  background-image:url('/images/rawpixel-com-267062.jpg');
+}
+
+.bg-planetEarth {
+  background-image:url('/images/recyclelogoglobe.jpg');
+}
+
+.bg-favorites {
+  background-image:url('/images/approved.jpg');
+}
+
+
+/* ----album section----*/
+
+.album-images{
+  height: 20vw
+}
+.album-images div{
+  background-color: rgba(255,255,255,.5)
+}
+
+/*----burger menu--------*/
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+.burger-menu li{
+  list-style:none;
+}
+
+.burger-button {
+  position: relative;
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  padding: 8px;
+}
+
+.burger-button span{
+  width: 25px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-top, .burger-bottom{
+}
+.burger-top{
+  top: 02px;
+}
+
+.burger-middle{
+  margin: 5px 0;
+}
+.burger-bottom{
+  bottom: 02.5px;
+}
+
+
+.active .burger-top{
+  transform: rotateZ(45deg);
+  top:8px;
+}
+.active .burger-bottom{
+  transform:rotateZ(-45deg);
+  bottom:8px;
+}
+
+.active .burger-middle{
+
+}
