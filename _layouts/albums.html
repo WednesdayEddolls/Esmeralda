@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
+<section>
+
+
 <h2> {{page.title}} </h2>
+
+{{content}}
+</section>
 <div class="grid">
     {% for photo in page.photo %}
-    <div class="col-4 background-image" style="background-image:url('{{photo.url}}')">
-    </div>
+    <div class="col-4 background-image border" style="background-image:url('{{photo.url}}')">
+
+  </div>
     {% endfor %}
   </div>
 </div>
