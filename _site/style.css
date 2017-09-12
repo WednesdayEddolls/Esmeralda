@@ -84,7 +84,6 @@ footer .fa{font-size: 3rem}
 /*index*/
 
 .index-circles{
-  background-color: pink;
   background-size:cover;
   background-position: center;
   height:27.4vw;
@@ -106,9 +105,13 @@ filter: grayscale(1);
 }
 .index-circles:hover h2 {
   color: white;
-}
+  }
 
-
+  .index-grid{
+    position: relative;
+    right: -8vw;
+    top: -8vw;
+  }
 
 
 /* Background images */
@@ -116,11 +119,14 @@ filter: grayscale(1);
 .background-image {
   background-size:cover;
   background-position: center;
-  padding: 20% 1% 0;
+  padding: 40% 1% 0;
+  min-height: 40vh;
+  font-weight: 600
 }
 
 .background-image h2 {
   color: white;
+ font-size: 5vw
 }
 /* Home page circles */
 .bg-travel {
@@ -135,12 +141,15 @@ filter: grayscale(1);
   background-image:url('/images/recyclelogoglobe.jpg');
 }
 
-.bg-favorites {
-  background-image:url('/images/approved.jpg');
+.bg-blog {
+  background-image:url('/images/thought-catalog-214785.jpg');
 }
 
 
 /* ----album section----*/
+.album .col-3{
+  margin: 2%;
+}
 
 .album-images{
   background-size: cover;
@@ -178,11 +187,32 @@ filter: grayscale(1);
 }
 
 a:hover {
-  color: teal
+  color: teal;
 }
-.fa:hover { 
-  color: teal
+
+.fa{
+  transition: 1s;
 }
+
+.fa-instagram{
+  padding: .2% .35%;
+  border-radius: 5px;
+  color: #fff;
+  transform: scale(0.83);
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right top, #4e66d4, #9736ad, #db505d, #fbac4f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom left, #4e66d4, #9736ad, #db505d, #fbac4f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom left, #4e66d4, #9736ad, #db505d, #fbac4f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom left, #4e66d4, #9736ad, #db505d, #fbac4f); /* Standard syntax */
+}
+.fa-twitter-square{
+  color: #1da1f2
+}
+.fa:hover{
+  font-size: 4rem;
+}
+
+
 .burger-menu li{
   list-style:none;
 }

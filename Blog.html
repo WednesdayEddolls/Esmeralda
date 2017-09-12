@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<section>
+  <h2> Blog </h2>
+  <div class="grid">
+  {% for blog in site.posts %}
+      <div class="col-4 light-padded">
+        <div class="background-image col-4" style="background-image:url('{{blog.pic}}');">
+            <h2>{{blog.title}}</h2>
+        </div>
+      </div>
+      <div class="col-8-middle heavy-padded">
+
+          <p>{{blog.description}}</p>
+          <a href="{{blog.url}}">Read More</a>
+      </div>
+  {% endfor %}
+  </div>

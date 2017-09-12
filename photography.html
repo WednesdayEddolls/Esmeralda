@@ -2,9 +2,9 @@
 layout: default
 ---
 <h2> Albums </h2>
-<div class="grid">
+<div class="grid album">
 {% for albums in site.albums %}
-<div class="album-images flex-center col-4" style="background-image:url('{{albums.coverPhoto}}')">
+<div class="album-images flex-center col-3" style="background-image:url('{{albums.coverPhoto}}')">
   <div>
     <h2>{{albums.title}}</h2>
     <a href="{{albums.url}}">See More</a>
